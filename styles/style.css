@@ -1,8 +1,260 @@
-.header-container {
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+* {
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
     width: 1170px;
     height: 500px;
     border-radius: 16px;
     justify-content: center;
     margin: auto;
     background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../images/banner.png');
+}
+
+.banner-title {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 64px;
+    font-weight: 800;
+    padding: 106px 287px 0px 287px;
+}
+
+.banner-des {
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    width: 676px;
+    padding: 0px 247px 20px 247px;
+}
+
+.header-input {
+    margin-left: 185px;
+    margin-bottom: 106px;
+    margin-top: -10px;
+    display: inline-flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+}
+
+.inp1 {
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FFF;
+    border: none;
+}
+
+.inp1::placeholder {
+    color: rgba(19, 19, 24, 0.50);
+    text-align: left;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.btn-primary {
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+}
+
+.searchicon {
+    width: 24px;
+    height: 24px;
+}
+
+main {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.tour {
+    display: flex;
+    margin-top: 100px;
+}
+
+.tour-title {
+    margin-top: 0px;
+    color: #131318;
+    text-align: left;
+    font-family: Mulish;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.para1 {
+    margin-bottom: 24px;
+    color: rgba(19, 19, 24, 0.70);
+    font-family: Mulish;
+    font-size: 16px;
+    width: 577px;
+    margin-top: 30px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.ulp {
+    margin-right: 30px;
+    color: rgba(19, 19, 24, 0.70);
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+.ulp>li {
+    margin-bottom: 18px;
+}
+
+.para2 {
+    color: rgba(19, 19, 24, 0.70);
+    font-family: Mulish;
+    font-size: 16px;
+    width: 577px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.footer {
+    width: 1440px;
+    height: 502px;
+    background: rgba(19, 19, 24, 0.05);
+    margin: auto;
+}
+
+.foot-title {
+    padding-top: 110px;
+    padding-left: 660px;
+    color: var(--Dark-01, #131318);
+    font-family: Mulish;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.footp {
+    padding-left: 335px;
+    color: #5A5A5D;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    width: 769px;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+.icons {
+    padding-left: 633px;
+}
+
+i {
+    padding-left: 24px;
+}
+
+.line {
+    width: 872px;
+    height: 1px;
+    background: rgba(19, 19, 24, 0.10);
+    margin-left: 280px;
+    margin-top: 50px;
+}
+
+.footpp {
+    padding-top: 50px;
+    padding-left: 624px;
+    color: #131318;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.row {
+    margin-top: 24px;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.desh3 {
+    margin-top: 100px;
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.desp {
+    margin: auto;
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    width: 643px;
+}
+
+@media screen and (max-width:600px) {
+    header {
+        width: 900px;
+        height: 700px;
+        border-radius: 16px;
+        background-repeat: no-repeat;
+        justify-content: center;
+        margin: auto;
+        background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../images/banner.png');
+    }
+
+    .row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: auto;
+    }
+
+    .banner-title {
+        margin-top: -100px;
+    }
+
+    .banner-des {
+        margin-top: -50px;
+    }
+
+    .header-input {
+        margin-left: 405px;
+        padding-right: -100px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 255px;
+        height: 52px;
+        padding: 16px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .tour {
+        flex-direction: column;
+        margin-left: 300px;
+    }
 }
