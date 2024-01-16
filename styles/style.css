@@ -15,6 +15,48 @@ header {
     background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../images/banner.png');
 }
 
+nav {
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-bottom: -50px;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-left: 30px;
+    color: var(--Dark-02, #424247);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+.title {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.home {
+    color: #FF5400;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 18px;
+    font-weight: 700;
+}
+
 .banner-title {
     text-align: center;
     color: #FFF;
@@ -266,7 +308,125 @@ i {
     justify-content: space-between;
 }
 
+.news {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
 
+.newsletter {
+    width: 474px;
+    height: 422px;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.newsletter h4 {
+    padding-left: 40px;
+    color: #131318;
+    font-family: Mulish;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.newsletter p {
+    padding-left: 40px;
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: -80px;
+}
+
+.newsinput {
+    padding-left: 40px;
+    margin-top: -80px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+
+.newsletter input {
+    width: 393px;
+    height: 52px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: none;
+}
+
+.newsletter button {
+    width: 393px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.linee {
+    margin-top: -60px;
+    margin-left: 40px;
+    width: 393px;
+    height: 1px;
+    background: rgba(19, 19, 24, 0.10);
+}
+
+.newsletter input::placeholder {
+    color: rgba(19, 19, 24, 0.30);
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 20px;
+}
+
+.newsletter img {
+    display: block;
+    width: 672px;
+    height: 422px;
+    border-radius: 16px;
+}
+
+.imageup {
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    width: 324px;
+    height: 120px;
+    transform: rotate(-19.628deg);
+    border-radius: 16px;
+    background: #FF5400;
+}
+
+.imageup p {
+    margin: auto;
+    padding-top: 20px;
+    text-align: center;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.imageup h5 {
+    margin: auto;
+    text-align: center;
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.imgg {
+    position: relative;
+    display: inline-block;
+}
 
 
 
@@ -280,6 +440,49 @@ i {
         background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../images/banner.png');
     }
 
+    nav ul {
+        display: none;
+    }
+
+    body {
+        width: 1170px;
+    }
+
+    .imggg {
+        width: 1170px;
+    }
+
+    .imageup {
+        top: 75%;
+        left: 70%;
+    }
+
+    .despic {
+        width: 1170px;
+        height: 500px;
+    }
+
+    .whyrow1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .news {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .newsletter {
+        width: 100%;
+        height: 422px;
+        border-radius: 16px;
+        border: 1px solid #FF5400;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
     .inp1 {
         height: 40px;
         border-radius: 8px;
@@ -291,10 +494,6 @@ i {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         width: auto;
-    }
-
-    .banner-title {
-        margin-top: -100px;
     }
 
     .banner-des {
@@ -313,6 +512,27 @@ i {
 
     .tour {
         flex-direction: column;
-        margin-left: 300px;
+    }
+
+    .tour-des {
+        margin-bottom: 50px;
+    }
+
+    .whybox1,
+    .whybox2,
+    .whybox3 {
+        width: 1170px;
+    }
+
+    .newsletter input {
+        width: 1100px;
+    }
+
+    .tour-img {
+        width: 1170px;
+    }
+
+    .newsletter button {
+        width: 1100px;
     }
 }
