@@ -16,11 +16,12 @@ header {
 }
 
 .banner-title {
+    text-align: center;
     color: #FFF;
     font-family: Mulish;
     font-size: 64px;
     font-weight: 800;
-    padding: 106px 287px 0px 287px;
+    padding-top: 100px;
 }
 
 .banner-des {
@@ -30,8 +31,6 @@ header {
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
-    width: 676px;
-    padding: 0px 247px 20px 247px;
 }
 
 .header-input {
@@ -136,15 +135,15 @@ main {
 }
 
 .footer {
-    width: 1440px;
-    height: 502px;
+    width: 1170px;
+    height: 500px;
     background: rgba(19, 19, 24, 0.05);
     margin: auto;
 }
 
 .foot-title {
     padding-top: 110px;
-    padding-left: 660px;
+    text-align: center;
     color: var(--Dark-01, #131318);
     font-family: Mulish;
     font-size: 32px;
@@ -152,19 +151,21 @@ main {
 }
 
 .footp {
-    padding-left: 335px;
+    /* padding-left: 335px; */
+    display: block;
+    justify-content: center;
     color: #5A5A5D;
     text-align: center;
     font-family: Mulish;
     font-size: 16px;
-    width: 769px;
+    /* width: 769px; */
     font-weight: 400;
     line-height: 26px;
-    /* 162.5% */
 }
 
 .icons {
-    padding-left: 633px;
+    margin: auto;
+    width: 15%;
 }
 
 i {
@@ -172,16 +173,15 @@ i {
 }
 
 .line {
+    margin: auto;
     width: 872px;
     height: 1px;
     background: rgba(19, 19, 24, 0.10);
-    margin-left: 280px;
     margin-top: 50px;
 }
 
 .footpp {
-    padding-top: 50px;
-    padding-left: 624px;
+    text-align: center;
     color: #131318;
     font-family: Inter;
     font-size: 16px;
@@ -215,15 +215,76 @@ i {
     width: 643px;
 }
 
+
+
+.whybox h4 {
+    padding-left: 32px;
+}
+
+.whybox p {
+    padding-left: 32px;
+    padding-top: 10px;
+}
+
+.whybox img {
+    width: 64px;
+    height: 64px;
+    padding-left: 32px;
+    padding-top: 30px;
+}
+
+.whybox1 {
+    width: 573px;
+    height: 284px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.whybox2 {
+    width: 573px;
+    height: 284px;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.whybox3 {
+    width: 573px;
+    height: 284px;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    margin: auto;
+    margin-top: 24px;
+}
+
+.whyrow1 {
+    margin-top: 24px;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+
+
+
+
 @media screen and (max-width:600px) {
     header {
-        width: 900px;
-        height: 700px;
+        height: 500px;
         border-radius: 16px;
         background-repeat: no-repeat;
         justify-content: center;
         margin: auto;
         background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../images/banner.png');
+    }
+
+    .inp1 {
+        height: 40px;
+        border-radius: 8px;
+        background: #FFF;
+        border: none;
     }
 
     .row {
@@ -237,19 +298,16 @@ i {
     }
 
     .banner-des {
-        margin-top: -50px;
+        margin-top: -70px;
     }
 
     .header-input {
-        margin-left: 405px;
+        margin: auto;
         padding-right: -100px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        width: 255px;
-        height: 52px;
+        width: 200px;
         padding: 16px;
-        flex-direction: column;
-        justify-content: center;
         gap: 16px;
     }
 
