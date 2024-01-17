@@ -672,6 +672,7 @@ i {
     .despic {
         width: 1170px;
         height: 600px;
+        border-radius: 20px;
     }
 
     .text-overlay1 {
