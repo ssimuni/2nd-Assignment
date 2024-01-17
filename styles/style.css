@@ -140,7 +140,6 @@ nav li a {
     background: #aa1f06;
 }
 
-
 main {
     max-width: 1170px;
     margin: 0 auto;
@@ -287,6 +286,7 @@ i {
 .despic {
     position: relative;
     background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), lightgray 50% / cover no-repeat;
+    border-radius: 20px;
 }
 
 .text-overlay1 {
