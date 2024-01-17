@@ -90,12 +90,11 @@ nav li a {
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
+    padding-bottom: 20px;
 }
 
 .header-input {
     margin-left: 185px;
-    margin-bottom: 106px;
-    margin-top: -10px;
     display: inline-flex;
     padding: 16px;
     align-items: flex-start;
@@ -672,6 +671,7 @@ i {
     .despic {
         width: 1170px;
         height: 600px;
+        border-radius: 20px;
     }
 
     .text-overlay1 {
@@ -802,9 +802,9 @@ i {
     }
 
     .snip1390 {
-        width: 1120px;
+        width: 1100px;
         height: 600px;
-        margin-left: 10px;
+        padding: 20px;
     }
 
     .snip1390 blockquote {
