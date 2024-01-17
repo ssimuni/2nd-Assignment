@@ -133,6 +133,11 @@ nav li a {
     font-weight: 700;
     border: none;
     margin: auto;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: #aa1f06;
 }
 
 
@@ -279,7 +284,87 @@ i {
     width: 643px;
 }
 
+.despic {
+    position: relative;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), lightgray 50% / cover no-repeat;
+}
 
+.text-overlay1 {
+    position: absolute;
+    padding-left: 220px;
+    padding-top: 140px;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.text-overlay2 {
+    position: absolute;
+    padding-left: 820px;
+    padding-top: 140px;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.text-overlay3 {
+    position: absolute;
+    padding-left: 130px;
+    padding-top: 130px;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.text-overlay4 {
+    position: absolute;
+    padding-left: 540px;
+    padding-top: 130px;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.text-overlay5 {
+    position: absolute;
+    padding-left: 980px;
+    padding-top: 130px;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.text-overlay6 {
+    position: absolute;
+    padding-left: 180px;
+    padding-top: 140px;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.text-overlay7 {
+    position: absolute;
+    padding-left: 780px;
+    padding-top: 140px;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 28px;
+    font-weight: 800;
+}
 
 .whybox h4 {
     padding-left: 32px;
@@ -368,7 +453,8 @@ i {
     margin-top: -80px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 10px;
+    gap: 8px;
+    align-items: center;
 }
 
 .newsletter input {
@@ -379,8 +465,10 @@ i {
     border: none;
 }
 
-.newsletter button {
-    width: 393px;
+.newsinput button {
+    margin-left: -1px;
+    margin-top: -5px;
+    width: 398px;
     height: 52px;
     border-radius: 8px;
     background: #FF5400;
@@ -586,7 +674,47 @@ i {
         height: 600px;
     }
 
-    maldives h4 {}
+    .text-overlay1 {
+        padding-left: 500px;
+        padding-top: 280px;
+        font-size: 40px;
+    }
+
+    .text-overlay2 {
+        padding-left: 500px;
+        padding-top: 900px;
+        font-size: 40px;
+    }
+
+    .text-overlay3 {
+        padding-left: 500px;
+        padding-top: 280px;
+        font-size: 40px;
+    }
+
+    .text-overlay4 {
+        padding-left: 500px;
+        padding-top: 900px;
+        font-size: 40px;
+    }
+
+    .text-overlay5 {
+        padding-left: 500px;
+        padding-top: 1550px;
+        font-size: 40px;
+    }
+
+    .text-overlay6 {
+        padding-left: 500px;
+        padding-top: 280px;
+        font-size: 40px;
+    }
+
+    .text-overlay7 {
+        padding-left: 500px;
+        padding-top: 900px;
+        font-size: 40px;
+    }
 
     .whyrow1 {
         display: grid;
@@ -611,6 +739,7 @@ i {
 
     .inp1 {
         height: 40px;
+        width: 200px;
         border-radius: 8px;
         background: #FFF;
         border: none;
