@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 
 * {
     font-family: 'Mulish', sans-serif;
@@ -38,8 +40,23 @@ nav li {
     font-weight: 400;
 }
 
+span {
+    color: #FF5400;
+    font-family: Mulish;
+    font-weight: 800;
+}
+
 nav li a {
     text-decoration: none;
+}
+
+.menuu {
+    display: none;
+}
+
+.logoo {
+    width: 50px;
+    height: 50px;
 }
 
 .title {
@@ -103,6 +120,7 @@ nav li a {
     font-weight: 400;
 }
 
+
 .btn-primary {
     width: 174px;
     height: 52px;
@@ -114,12 +132,9 @@ nav li a {
     font-size: 16px;
     font-weight: 700;
     border: none;
+    margin: auto;
 }
 
-.searchicon {
-    width: 24px;
-    height: 24px;
-}
 
 main {
     max-width: 1170px;
@@ -184,7 +199,7 @@ main {
 }
 
 .foot-title {
-    padding-top: 110px;
+    margin-top: -40px;
     text-align: center;
     color: var(--Dark-01, #131318);
     font-family: Mulish;
@@ -203,6 +218,13 @@ main {
     /* width: 769px; */
     font-weight: 400;
     line-height: 26px;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    padding-left: 450px;
+    margin-top: 100px;
 }
 
 .icons {
@@ -428,6 +450,88 @@ i {
     display: inline-block;
 }
 
+.testimonial {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.snip1390 {
+    font-family: Mulish;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    width: 100%;
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+    background-color: #FF5400;
+    padding: 30px;
+    background-image: linear-gradient(-25deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
+    border-radius: 16px;
+}
+
+.snip1390 figcaption {
+    width: 100%;
+}
+
+.snip1390 h2,
+.snip1390 h4,
+.snip1390 blockquote {
+    margin: 0;
+}
+
+.snip1390 h2,
+.snip1390 h4 {
+    font-weight: 300;
+}
+
+.snip1390 h2 {
+    color: #ffffff;
+}
+
+.snip1390 h4 {
+    color: black;
+}
+
+.snip1390 blockquote {
+    font-size: 1em;
+    padding: 45px 20px 40px 50px;
+    margin-top: 30px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: inset -1.4px -1.4px 2px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    position: relative;
+}
+
+.snip1390 blockquote:before {
+    font-family: 'FontAwesome';
+    content: "\201C";
+    position: absolute;
+    font-size: 70px;
+    top: 0px;
+    left: 20px;
+}
+
+.snip1390 .profile {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
+    margin-bottom: 10px;
+    border: solid 5px #eab3aa;
+}
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width:600px) {
@@ -440,8 +544,28 @@ i {
         background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../images/banner.png');
     }
 
+    nav {
+        width: 1170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-bottom: -50px;
+    }
+
     nav ul {
         display: none;
+    }
+
+    .menuu {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        padding-left: 850px;
+    }
+
+    .logoo {
+        padding-left: 5px;
     }
 
     body {
@@ -459,8 +583,10 @@ i {
 
     .despic {
         width: 1170px;
-        height: 500px;
+        height: 600px;
     }
+
+    maldives h4 {}
 
     .whyrow1 {
         display: grid;
@@ -470,7 +596,7 @@ i {
     .news {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-
+        gap: 30px;
     }
 
     .newsletter {
@@ -496,11 +622,16 @@ i {
         width: auto;
     }
 
+    .banner-title {
+        padding-top: 40px;
+    }
+
     .banner-des {
-        margin-top: -70px;
+        margin-top: -50px;
     }
 
     .header-input {
+        margin-bottom: 20px;
         margin: auto;
         padding-right: -100px;
         display: grid;
@@ -535,4 +666,23 @@ i {
     .newsletter button {
         width: 1100px;
     }
+
+    .testimonial {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .snip1390 {
+        width: 1120px;
+        height: 600px;
+        margin-left: 10px;
+    }
+
+    .snip1390 blockquote {
+        text-align: center;
+        width: 600px;
+        margin: auto;
+        margin-top: 50px;
+    }
+
 }
